@@ -16,7 +16,7 @@ h1  {
     t
     position: 
     absolute;
-    transform: rotate(318.46deg);
+   /* transform: rotate(318.46deg);*/
   }
   #container{
     height: 300px;
