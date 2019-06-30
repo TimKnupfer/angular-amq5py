@@ -13,10 +13,13 @@ h1  {
   }
   #scheibe_innen {
     width: 300px;
-    t
+    
     position: 
     absolute;
    /* transform: rotate(318.46deg);*/
+
+transition: all 2s;
+
   }
   #container{
     height: 300px;
