@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FermatTestComponent implements OnInit {
 Versuchskaninchen: number = 13;
 Anzahl: number=5;
+Ergebnis="N/A"
   constructor() { }
 
   ngOnInit() {
@@ -25,5 +26,4 @@ Anzahl: number=5;
 
 
 
-Ergebnis: "N/A"
-{{Ergebnis}} 
+
