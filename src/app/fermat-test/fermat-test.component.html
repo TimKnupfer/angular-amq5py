@@ -3,9 +3,10 @@
 <form>
  Versuchskaninchen: <input name="Versuchskaninchen" [(ngModel)]= "Versuchskaninchen"/> 
  Anzahl: <input name="Anzahl" [(ngModel)]= "Anzahl"/>
-</form>
+
 
 <br/>
-<button>prüfe!</button>
+<button (click)="fermattest()">prüfe!</button>
+</form>
 <br/>
 {{Ergebnis}}
