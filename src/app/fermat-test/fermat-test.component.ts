@@ -16,6 +16,8 @@ export class FermatTestComponent implements OnInit {
   fermattest() {
     this.Ergebnis = "starte Fermat-Test der Zahl" + this.Versuchskaninchen + "...";
 
+    let Endergebnis= true; 
+
     for (let zeuge = 2; zeuge < this.Anzahl + 2; zeuge++) {
 
 
@@ -29,8 +31,16 @@ export class FermatTestComponent implements OnInit {
         this.Ergebnis += "zeuge " + zeuge + " Ok...";
       } else {
         this.Ergebnis += "Zeuge " + zeuge + " Nicht Ok!";
+        Endergebnis= false;
       }
     }
+
+if(Endergebnis ===true) {
+  this.Ergebnis +="Test bestanden"
+}
+else{
+  this.Ergebnis +="N icht bestanden"
+}
   }
   ngOnInit() {
   }
