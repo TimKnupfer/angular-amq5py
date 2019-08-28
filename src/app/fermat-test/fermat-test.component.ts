@@ -25,8 +25,8 @@ export class FermatTestComponent implements OnInit {
       let Zwischenergebnis = 1;
       for (let i = 0; i < this.Versuchskaninchen - 1; i++) {
         Zwischenergebnis = Zwischenergebnis * zeuge
+         Zwischenergebnis = Zwischenergebnis % this.Versuchskaninchen;
       }
-      Zwischenergebnis = Zwischenergebnis % this.Versuchskaninchen;
       if (Zwischenergebnis === 1) {
         this.Ergebnis += "zeuge " + zeuge + " Ok...";
       } else {
